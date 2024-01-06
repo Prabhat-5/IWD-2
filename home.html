@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+            width:100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            background-image: url('1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:top; 
+            overflow-x: hidden;
+        }
+
+        .container {
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 0vh;
+            width: 100%;
+        }
+
+        header {
+            background-color: white;
+            color: #bf00ff;
+            padding: 10px 5%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            text-align: right;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 50px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ce52e6;
+            font-size: large;
+            transition: color 0.5s;
+        }
+        nav ul li a:hover {
+            color: brown;
+        }
+        .logo{
+            margin-left: 4%;
+            width: 70px;
+            border-radius: 50%;
+            height: 70px;
+            color: #bf00ff;
+        }
+        h1 {
+            margin-right: auto;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .me {
+            font-size: 220%;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+        .me:hover{
+            font-size:250%;
+            transition:0.5s;
+        }
+        .p1 {
+            width: 20%;
+            height: auto;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 10%;
+            right: 8%;
+        }
+
+        footer {
+            background-color: transparent;
+            color: #fcfcfc;
+            text-align: center;
+            width: 100%;
+            margin-top: auto;
+            padding: 20px 0;
+        }
+        button{
+            font-size: x-large;
+            height: auto;
+            width: 15%;
+            background-color: rgb(238, 0, 255);
+        }
+        button:hover{
+            font-size: large;
+            background-color:purple;
+            color:white;
+            transition: 0.3s;
+        }
+        .social {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.4rem;
+            margin-top: 1.4rem;
+        }
+
+        .social a {
+            display: grid;
+            place-items: center;
+            text-decoration: none;
+            color: var(--primary-color);
+            border: 1.6px solid var(--primary-color);
+            font-size: 1.5rem;
+            border-radius: 50%;
+            padding: 0.39rem;
+            text-align: center;
+        }
+
+        .social a:hover {
+            color: var(--primary-dark);
+            background-color: var(--primary-color);
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="p.jpg" class="logo">
+        <h1>Prabhat</h1>
+        <nav>
+            <ul>                
+                <li><a href="Profile.html">Profile</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="index.html">log out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="me">
+        <p>HI, I AM</p>
+        <p>PRABHAT</p>
+        <p>I/UX DESIGNER AND WEB DEVELOPER</p>
+    </section>
+    <div class="social">
+        <font color="white"><h3><u>CONTACT</u></h3><a href="https://www.instagram.com/accounts/onetap/?next=%2F" target="_blank"style="--socialAni:1">Instagram<i class='bx bxl-instagram'></i></a>
+        <a href="https://web.whatsapp.com/" target="_blank" style="--socialAni:2"><i class='bx bxl-whatsapp'>Whatsapp</i></a>
+        <a href="https://github.com/" target="_blank" style="--socialAni:3"><i class='bx bxl-github'>Git</i></a></font>
+
+    </div>
+    <img src="4.png" class="p1">
+    <footer>
+        <hr>
+        <p>&copy; All rights reserved.</p>
+    </footer>
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            var checkbox = document.getElementById("click");
+            var menuIcon = document.querySelector(".mainicon");
+
+            menuIcon.addEventListener("click", function () {
+                checkbox.checked = !checkbox.checked;
+            });
+        });
+    </script>
+</body>
+</html>
